@@ -89,21 +89,71 @@ nav.site a.active{color:#fff;border-bottom-color:var(--gold);font-weight:500;}
 
 /* Hero, used on home page */
 .hero{
+  position:relative;
   background:var(--navy);
   color:#EDE9DD;
-  padding:64px 0 76px;
+  padding:96px 0 108px;
+  overflow:hidden;
 }
+.hero-mark{
+  position:absolute;
+  top:50%;
+  right:-60px;
+  transform:translateY(-50%);
+  width:520px;
+  height:520px;
+  opacity:0.1;
+  animation:hero-reveal 1.6s ease-out both;
+}
+.hero .wrap{position:relative;z-index:1;}
 .hero h1{
   color:#fff;
-  font-size:2.5rem;
-  max-width:14ch;
+  font-size:2.7rem;
+  max-width:13ch;
+  animation:hero-rise 1s ease-out both;
 }
-.hero .lede{color:#C8C2B0;}
+.hero .lede{
+  color:#C8C2B0;
+  animation:hero-rise 1s ease-out .15s both;
+}
 .hero-rule{
   width:56px;
   height:2px;
   background:var(--gold);
-  margin:22px 0 26px;
+  margin:24px 0 28px;
+  animation:hero-rise 1s ease-out .05s both;
+}
+@keyframes hero-rise{
+  from{opacity:0;transform:translateY(14px);}
+  to{opacity:1;transform:translateY(0);}
+}
+@keyframes hero-reveal{
+  from{opacity:0;transform:translateY(-50%) scale(0.92);}
+  to{opacity:0.1;transform:translateY(-50%) scale(1);}
+}
+@media (prefers-reduced-motion: reduce){
+  .hero-mark, .hero h1, .hero .lede, .hero-rule{animation:none;}
+}
+
+/* Signature band - full-bleed navy strip with centered mark, used between sections */
+.signature-band{
+  background:var(--navy-deep);
+  color:#B7AE95;
+  padding:56px 0;
+  text-align:center;
+}
+.signature-band img{width:64px;height:64px;opacity:0.85;margin-bottom:16px;}
+.signature-band p{
+  font-family:var(--serif);
+  font-style:italic;
+  font-size:1.15rem;
+  color:#EDE9DD;
+  max-width:44ch;
+  margin:0 auto;
+}
+
+@media (max-width:700px){
+  .hero-mark{width:320px;height:320px;right:-100px;}
 }
 
 main{padding:56px 0 90px;}
