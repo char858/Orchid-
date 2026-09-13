@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200 200" fill="none">
+  <g stroke="#0C2340" stroke-width="1.5" stroke-linejoin="round">
+    <g transform="translate(100,100)">
+      <g id="petal-group">
+        <path d="M0,-6 C -13,-26 -11,-48 0,-70 C 11,-48 13,-26 0,-6 Z"/>
+        <path d="M0,-10 C -6,-28 -5,-46 0,-62" stroke-width="0.7"/>
+      </g>
+      <use href="#petal-group" xlink:href="#petal-group" transform="rotate(72)"/>
+      <use href="#petal-group" xlink:href="#petal-group" transform="rotate(144)"/>
+      <use href="#petal-group" xlink:href="#petal-group" transform="rotate(216)"/>
+      <use href="#petal-group" xlink:href="#petal-group" transform="rotate(288)"/>
+      <circle r="7" stroke-width="1.5"/>
+      <circle r="2.2" fill="#0C2340" stroke="none"/>
+    </g>
+  </g>
+</svg>

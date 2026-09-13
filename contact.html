@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Orchid Fund</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap header-inner">
+    <a href="index.html" class="brand">
+      <img src="orchid-mark.svg" alt="Orchid Fund mark">
+      <span class="brand-text">
+        <span class="site-title">ORCHID FUND</span>
+        <span class="site-tagline">personal research &amp; paper portfolio — est. 2026</span>
+      </span>
+    </a>
+    <nav class="site">
+      <a href="index.html">About</a>
+      <a href="holdings.html">Holdings</a>
+      <a href="research.html">Research</a>
+      <a href="performance.html">Performance</a>
+      <a href="journal.html">Journal</a>
+      <a href="letters.html">Letters</a>
+      <a href="resources.html">Resources</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <h1>Get in touch</h1>
+    <p class="lede">Questions, corrections, or just want to follow the letters &mdash; write in.</p>
+
+    <!--
+      Replace the form action below with your own Formspree endpoint:
+      https://formspree.io/f/YOUR_FORM_ID
+      Sign up free at formspree.io, create a form, and paste the ID in.
+    -->
+    <form class="contact" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+
+    <h2>Follow the letters</h2>
+    <p class="meta">[If you set up Substack for the letters, add a subscribe link or embed here. Otherwise, this form doubles as a way for people to ask to be notified.]</p>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    All positions are simulated (paper trading). Nothing on this site is investment advice. Last updated [Month Year].
+  </div>
+</footer>
+
+</body>
+</html>
