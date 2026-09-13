@@ -55,7 +55,7 @@ header.site{
   text-decoration:none;
   color:var(--navy);
 }
-.brand img{height:88px;width:auto;display:block;}
+.brand img{height:120px;width:auto;display:block;}
 .brand-text .site-title{
   font-family:var(--serif);
   font-weight:700;
